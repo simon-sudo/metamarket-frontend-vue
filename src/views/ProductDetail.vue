@@ -30,7 +30,7 @@
       </div>
     </div>
     <van-action-bar>
-      <van-action-bar-icon icon="chat-o" text="客服" />
+      <!-- <van-action-bar-icon icon="chat-o" text="客服" /> -->
       <van-action-bar-icon icon="cart-o" :badge="!cart.count ? '' : cart.count" @click="goTo()" text="购物车" />
       <van-action-bar-button type="warning" @click="handleAddCart" text="加入购物车" />
       <van-action-bar-button type="danger" @click="goToCart" text="立即购买" />
@@ -178,10 +178,10 @@ const goToCart = async () => {
       }
     }
     .van-action-bar-button--warning {
-      background: linear-gradient(to right,#6bd8d8, @primary)
+      // background: linear-gradient(to right,#6bd8d8, @primary)
     }
     .van-action-bar-button--danger {
-      background: linear-gradient(to right, #0dc3c3, #098888)
+      // background: linear-gradient(to right, #0dc3c3, #098888)
     }
   }
 </style>

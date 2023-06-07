@@ -32,7 +32,7 @@
         </van-field>
         <div style="margin: 16px;">
           <div class="link-register" @click="toggle('register')">立即注册</div>
-          <van-button round block color="#1baeae" native-type="submit">登录</van-button>
+          <van-button round block native-type="submit" type="submit">登录</van-button>
         </div>
       </van-form>
     </div>

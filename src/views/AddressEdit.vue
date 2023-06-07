@@ -131,11 +131,16 @@ const onDelete = async () => {
   .address-edit-box {
     .van-address-edit {
       .van-button--danger {
+        
         background: @primary;
         border-color: @primary;
       }
       .van-switch--on {
         background: @primary;
+      }
+      .van-button--primary{
+        background: @primary;
+        border: var(--van-button-border-width) solid @primary;
       }
     }
   }

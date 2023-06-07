@@ -51,7 +51,7 @@ app.config.globalProperties.$filters = {
     if (url && url.startsWith('http')) {
       return url
     } else {
-      url = `http://metamarket.tx.morfans.cn${url}`
+      url = `https://metamarket.tx.morfans.cn${url}`
       return url
     }
   }

@@ -86,8 +86,8 @@ const goTo = (r, query) => {
       width: 94%;
       margin: 10px;
       height: 115px;
-      background: linear-gradient(90deg, @primary, #51c7c7);
-      box-shadow: 0 2px 5px #269090;
+      background: linear-gradient(to right, #ff3300, @primary );
+      box-shadow: 0 2px 5px gray;
       border-radius: 6px;
       .info {
         position: relative;

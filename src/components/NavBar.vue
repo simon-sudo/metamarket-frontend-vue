@@ -2,7 +2,8 @@
   <div class="nav-bar van-hairline--top">
     <ul class="nav-list">
       <router-link  class="nav-list-item active" to="home">
-        <i class="nbicon nblvsefenkaicankaoxianban-1"></i>
+        <i class="van-icon van-icon-home-o"></i>
+        <!-- <i class="nbicon nblvsefenkaicankaoxianban-1"></i> -->
         <span>首页</span>
       </router-link>
       <router-link  class="nav-list-item" to="category">
@@ -14,7 +15,8 @@
         <span>购物车</span>
       </router-link>
       <router-link  class="nav-list-item" to="user">
-        <i class="nbicon nblvsefenkaicankaoxianban-"></i>
+        <!-- nbicon nblvsefenkaicankaoxianban- -->
+        <i class="van-icon van-icon-contact"></i>
         <span>我的</span>
       </router-link>
     </ul>

@@ -4,7 +4,7 @@
       <header class="category-header wrap">
         <i class="nbicon nbfanhui" @click="goBack"></i>
         <div class="header-search">
-          <i class="nbicon nbSearch"></i>
+          <i class="van-badge__wrapper van-icon van-icon-search" ></i>
           <input
             type="text"
             class="search-title"
@@ -12,7 +12,7 @@
         </div>
         <span class="search-btn" @click="getSearch">搜索</span>
       </header>
-      <van-tabs type="card" color="#1baeae" @click-tab="changeTab" >
+      <van-tabs class="tab"  color="#ff9900" @click-tab="changeTab" border-radius="50px">
         <van-tab title="推荐" name=""></van-tab>
         <van-tab title="新品" name="new"></van-tab>
         <van-tab title="价格" name="price"></van-tab>
@@ -119,6 +119,11 @@ const changeTab = ({ name }) => {
 
 <style lang="less" scoped>
   @import '../common/style/mixin';
+  .van-badge__wrapper {
+    padding-left:5px;
+    padding-top:3px
+  }
+  
   .product-list-content {
     position: fixed;
     left: 0;
@@ -235,5 +240,7 @@ const changeTab = ({ name }) => {
     width: 150px;
     margin: 50px auto 20px;
   }
+
+  
 }
 </style>

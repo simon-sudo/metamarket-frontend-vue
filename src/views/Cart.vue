@@ -51,7 +51,7 @@
     <div class="empty" v-if="!state.list.length">
       <img class="empty-cart" src="https://s.yezgea02.com/1604028375097/empty-car.png" alt="空购物车">
       <div class="title">购物车空空如也</div>
-      <van-button round color="#1baeae" type="primary" @click="goTo" block>前往选购</van-button>
+      <van-button round color="#FF6B01" type="primary" @click="goTo" block>前往选购</van-button>
     </div>
     <nav-bar></nav-bar>
   </div>
@@ -198,6 +198,7 @@ const allCheck = () => {
         display: flex;
         .good-img {
           img {
+            .borderRadius(10px);
             .wh(100px, 100px)
           }
         }

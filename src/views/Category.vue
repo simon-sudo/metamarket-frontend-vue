@@ -4,7 +4,7 @@
       <header class="category-header wrap van-hairline--bottom">
         <i class="nbicon nbfanhui" @click="goHome"></i>
         <div class="header-search">
-          <i class="nbicon nbSearch"></i>
+          <i class="van-badge__wrapper van-icon van-icon-search"></i>
           <router-link tag="span" class="search-title" to="./product-list?from=category">全场50元起步</router-link>
         </div>
         <i class="iconfont icon-More"></i>
@@ -32,7 +32,7 @@
                     <div class="category-list" v-for="(products, index) in category.secondLevelCategoryVOS" :key="index">
                       <p class="catogory-title">{{products.categoryName}}</p>
                       <div class="product-item" v-for="(product, index) in products.thirdLevelCategoryVOS" :key="index" @click="selectProduct(product)">
-                        <img src="//s.weituibao.com/1583591077131/%E5%88%86%E7%B1%BB.png" class="product-img"/>
+                        <img src="../common/style/商城.png" class="product-img"/>
                         <p v-text="product.categoryName" class="product-title"></p>
                       </div>
                     </div>
@@ -87,6 +87,10 @@ const selectProduct = (item) => {
 </script>
 <style lang="less" scoped>
   @import '../common/style/mixin';
+  .van-badge__wrapper {
+    padding-left:5px;
+    padding-top:3px
+  }
   .categray {
     .category-header {
       background: #fff;
@@ -117,6 +121,7 @@ const selectProduct = (item) => {
         padding: 5px 0;
         color: #232326;
         background: #F7F7F7;
+        text-align: center;
         border-radius: 20px;
         .nbSearch {
           padding: 0 10px 0 20px;
@@ -126,7 +131,9 @@ const selectProduct = (item) => {
           font-size: 12px;
           color: #666;
           line-height: 21px;
+          padding-left: 10px;
         }
+      
       }
       .icon-More {
         font-size: 20px;

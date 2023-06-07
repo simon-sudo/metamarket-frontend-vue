@@ -21,6 +21,7 @@ export default {
 
 <style lang='less' scoped>
   .my-swipe {
+    margin-top: 37px;
     img {
       width: 100%;
       height: 100%;

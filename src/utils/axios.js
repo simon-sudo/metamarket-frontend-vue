@@ -5,7 +5,7 @@
 
  console.log('import.meta.env', import.meta.env)
  
- axios.defaults.baseURL = import.meta.env.MODE == 'development' ? '//metamarket.tx.morfans.cn/api/v1' : '//metamarket.tx.morfans.cn/api/v1'
+ axios.defaults.baseURL = import.meta.env.MODE == 'development' ? 'https://metamarket.tx.morfans.cn/api/v1' : 'https://metamarket.tx.morfans.cn/api/v1'
  axios.defaults.withCredentials = true
  axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
  axios.defaults.headers['token'] = localStorage.getItem('token') || ''
