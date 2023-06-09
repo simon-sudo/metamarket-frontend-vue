@@ -28,7 +28,7 @@
               :key="one.orderId"
               :num="one.goodsCount"
               :price="one.sellingPrice"
-              desc="全场包邮"
+              desc="test"
               :title="one.goodsName"
               :thumb="$filters.prefix(one.goodsCoverImg)"
             />

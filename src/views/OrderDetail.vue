@@ -34,7 +34,7 @@
       style="background: #fff"
       :num="item.goodsCount"
       :price="item.sellingPrice"
-      desc="全场包邮"
+      desc="test"
       :title="item.goodsName"
       :thumb="$filters.prefix(item.goodsCoverImg)"
     />
