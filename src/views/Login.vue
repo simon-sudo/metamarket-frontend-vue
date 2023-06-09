@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <s-header :name="type == 'login' ? '登录' : '注册'" :back="'/home'"></s-header>
+    <s-header :name="type == 'login' ? '登录注册' : '注册登录'" :back="'/home'"></s-header>
     <!-- <img class="logo" src="https://s.yezgea02.com/1604045825972/newbee-mall-vue3-app-logo.png" alt=""> -->
     <div v-if="state.type == 'login'" class="login-body login">
       <van-form @submit="onSubmit">
@@ -135,6 +135,7 @@ const onSubmit = async (values) => {
     }
     .login-body {
       padding: 0 20px;
+      margin-top: 20px;
     }
     .login {
       .link-register {

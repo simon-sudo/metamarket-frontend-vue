@@ -7,8 +7,8 @@ import router from './router'
 import 'lib-flexible/flexible'
 
 import './assets/main.css'
-import './common/style/theme.css'
 import 'vant/es/toast/style'
+import './common/style/theme.css'
 const app = createApp(App)
 
 app.use(createPinia())

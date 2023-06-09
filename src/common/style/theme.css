@@ -1,4 +1,8 @@
 :root:root {
-  /* --van-primary-color:  #e06a2e; */
-  --van-toast-background:fade(black, 70%);
+  --van-primary-color: #e06a2e;
+  --van-toast-background: #000000bd;
+  --van-popup-background:#000000bd;
+}
+.van-popup {
+  background: #000000bd !important;
 }
